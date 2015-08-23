@@ -1,14 +1,10 @@
 package com.millinch.ebean.demo.eternal;
 
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.jianq.wenshui.util.GeneralEnumSerializer;
-
 /**
  * This guy is lazy, nothing left.
  *
  * @author 张劲航
  */
-@JsonSerialize(using = GeneralEnumSerializer.class)
 public enum UserStatus {
     DISABLED(0, "禁用"), ENABLED(1, "正常");
 
